@@ -1,0 +1,52 @@
+# Voir https://help.github.com/articles/ignoring-files/ pour plus d'informations sur l'ignoration des fichiers.
+
+# Dépendances
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Fichiers de test
+/coverage
+
+# Next.js (fichiers générés)
+/.next/
+/out/
+
+# Production (fichiers générés)
+/build
+
+# Fichiers système
+.DS_Store
+
+# Certificats (non nécessaires dans le dépôt)
+*.pem
+
+# Fichiers de débogage
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Fichiers d'environnement
+# Ignorer tous les fichiers .env, sauf ceux spécifiques que vous souhaitez inclure
+.env*
+!/.env.production
+!/.env.development
+
+# Fichiers Vercel
+.vercel
+
+# Fichiers TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Autres fichiers temporaires ou générés
+.next/cache/
+.lerna/
+/dist/
+/tmp/
