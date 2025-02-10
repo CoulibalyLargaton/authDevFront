@@ -29,21 +29,21 @@ Exemple : app/doc/page.js → http://localhost:3000/doc
 N'oublie pas de duplique le .env.exemple et renommer en .env
 
 
-# Récupérer les branches distantes
+#### Récupérer les branches distantes
 git fetch origin
 
-# Lister les branches distantes
+#### Lister les branches distantes
 git branch -r
 
-# Créer une nouvelle branche à partir d'une branche distante
+#### Créer une nouvelle branche à partir d'une branche distante
 git checkout -b ma_nouvelle_branche origin/feature-branch
 
-# Pousser votre nouvelle branche vers le dépôt distant
+#### Pousser votre nouvelle branche vers le dépôt distant
 git push origin ma_nouvelle_branche
 
-# Annuler un commit sans push
+#### Annuler un commit sans push
 git rm -r --cached .
 
-# Annuler le suivi d'un seul fichier sans push
+#### Annuler le suivi d'un seul fichier sans push
 git rm -r --cached [nom_fichier] ou [dossier]
 ----------------------------------------------------------------------------------
