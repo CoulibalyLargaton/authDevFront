@@ -1,3 +1,4 @@
+```
 .
 ├── app/                   # Dossier principal sans `src/`
 │   ├── doc/               # Documentation intégrée au projet
@@ -9,6 +10,7 @@
 ├── next.config.mjs        # Configuration de Next.js
 ├── tailwind.config.mjs    # Configuration de Tailwind CSS
 └── README.md              # Documentation du projet
+```
 
 
 Apres clonnage
@@ -46,4 +48,15 @@ git rm -r --cached .
 
 #### Annuler le suivi d'un seul fichier sans push
 git rm -r --cached [nom_fichier] ou [dossier]
+
+
 ----------------------------------------------------------------------------------
+
+Tailwind Doc
+
+Breakpoint prefix	Minimum width	CSS
+sm	40rem (640px)	@media (width >= 40rem) { ... }
+md	48rem (768px)	@media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... }
+xl	80rem (1280px)	@media (width >= 80rem) { ... }
+2xl	96rem (1536px)	@media (width >= 96rem) { ... }

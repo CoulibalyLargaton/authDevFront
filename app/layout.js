@@ -1,8 +1,9 @@
 import { Fugaz_One, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import NavBar from "@/components/NavBar";
 
-const opensan = Open_Sans({
+const opensans = Open_Sans({
   subsets: ["latin"],
 });
 
@@ -18,16 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const header = (
-    <header className="p-4 sm:p-8  flex items-center justify-between gap-4">
-      <Link href={'/'}>
-        <h1 className={'text-base sm:text-lg textGradient ' + fugaz.className}>
-        {process.env.NEXT_PUBLIC_APP_NAME}
-        </h1>
-      </Link>
-      <div className="flex items-center justify-between">
-        PLACEHOLDER CTA || STATS
-      </div>
-    </header>
+    <NavBar />
   )
 
   const footer = (
@@ -41,7 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       
       <body
-        className={`w-full max-w-[1000] max-auto text-sm sm:text-base min-h-screen flex flex-col text-slate-700 ${opensan.className} antialiased`}
+        className={`w-full max-w-[1500px] mx-auto text-sm sm:text-base min-h-screen flex flex-col text-slate-800 ${opensans.className}`}
       >
         {header}
           {children}

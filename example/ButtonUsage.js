@@ -14,7 +14,7 @@ export default function ButtonUsage() {
         <h2 className="text-xl font-semibold mb-2">1️⃣ Bouton simple</h2>
         <Button variant="primary">Cliquez ici</Button>
         <pre className="bg-gray-100 p-4 mt-2 rounded">
-{`<Button variant="primary">Cliquez ici</Button>`}
+          {`<Button variant="primary">Cliquez ici</Button>`}
         </pre>
       </div>
       
