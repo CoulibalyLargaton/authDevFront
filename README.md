@@ -69,7 +69,9 @@ xl	80rem (1280px)	@media (width >= 80rem) { ... }
 `git remote add upstream https://github.com/ATHENTIC-DEV/authDevFront.git`
 
 
-`git fetch upstream`
-`git checkout -b developer upstream/developer`
-`git push origin developer`
+```
+    git fetch upstream
+    git checkout -b developer upstream/developer
+    git push origin developer
+```
 
