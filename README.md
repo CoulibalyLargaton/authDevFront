@@ -64,3 +64,12 @@ lg	64rem (1024px)	@media (width >= 64rem) { ... }
 xl	80rem (1280px)	@media (width >= 80rem) { ... }
 2xl	96rem (1536px)	@media (width >= 96rem) { ... }
 ```
+
+#### Recuperer les derniers pushs
+`git remote add upstream https://github.com/ATHENTIC-DEV/authDevFront.git`
+
+
+`git fetch upstream`
+`git checkout -b developer upstream/developer`
+`git push origin developer`
+
