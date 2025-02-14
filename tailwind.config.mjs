@@ -1,13 +1,30 @@
+const flowbite = require("flowbite-react/tailwind");
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    flowbite.content(),
   ],
   theme: {
     extend: {
       colors: {
+        primary: {
+          DEFAULT: '#006355', // couleur principale
+          hover: '#004d42',
+        },
+        secondary: {
+          DEFAULT: '#feda90', // couleur secondaire
+          hover: '#fbc151',
+        },
+        info: {
+          DEFAULT: '#311d14', 
+          hover: '#1e110a',
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
@@ -29,5 +46,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    flowbite.plugin(),
+  ],
 };
