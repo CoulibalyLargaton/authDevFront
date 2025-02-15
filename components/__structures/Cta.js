@@ -17,7 +17,7 @@ export default function Cta() {
             <div className="flex justify-center mb-6">
               
               <div className="bg-yellow-100 py-1 px-2 text-xs font-bold inline-block">
-                New feature
+                passer a l'action
               </div>
             </div>
             <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4">
