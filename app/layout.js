@@ -2,6 +2,7 @@ import { Fugaz_One, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/__structures/Footer";
 
 const opensans = Open_Sans({
   subsets: ["latin"],
@@ -37,6 +38,10 @@ export default function RootLayout({ children }) {
       >
         {header}
           {children}
+
+          {/* section dedies au Footer */}
+          <Footer/>
+          {/* section a supprimer */}
         {footer}
       </body>
       
